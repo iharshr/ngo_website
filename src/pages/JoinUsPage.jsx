@@ -173,20 +173,22 @@ export const JoinUsPage = () => {
 
 const JoinUsContent = () => {
 	return (
-		<div className="bg-white py-6 sm:py-8 lg:py-12">
-			<div className="mx-auto max-w-screen-xl px-4 md:px-8">
-				<div className="grid gap-8 md:grid-cols-2 lg:gap-12">
+		<div className="bg-white sm:py-8 lg:py-12">
+			<div className="mx-auto max-w-screen-xl md:px-8">
+				<div className="grid gap-8 md:grid-cols-2 lg:gap-12 items-center">
 					<div>
 						<div className="h-64 overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-auto">
 							<img
-								src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600&h=750"
+								src="https://img.freepik.com/free-vector/charity-donation-icon-set_24877-54496.jpg"
+								width="600"
+								height="750"
 								loading="lazy"
 								alt="Photo by Martin Sanchez"
 								className="h-full w-full object-cover object-center"
 							/>
 						</div>
 					</div>
-					<div className="md:pt-8">
+					<div className="">
 						<p className="text-center font-bold text-indigo-500 md:text-left">
 							Who we are
 						</p>
