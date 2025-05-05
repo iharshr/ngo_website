@@ -26,6 +26,23 @@ join ngo form
 ### contact person deatils
 
 - name
-- address
+- contact number
+- email address
+
+---
+
+donate form
+
+### Item Deatils
+
+- item type
+- item weight
+- item width , height
+- pickup date time
+- pickup address
+
+### personal deatils
+
+- name
 - contact number
 - email address
