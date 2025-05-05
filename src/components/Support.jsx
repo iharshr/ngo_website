@@ -8,9 +8,7 @@ export const Support = () => {
 						Frequently asked questions
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text but is random or otherwise generated.
+					Have questions? We’re here to help! Browse through some of the most commonly asked questions below.
 					</p>
 				</div>
 				{/* text - end */}
@@ -19,7 +17,7 @@ export const Support = () => {
 					<div className="rounded-lg bg-gray-100 p-5">
 						<div className="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 							<h3 className="font-semibold text-indigo-500 sm:text-lg md:text-xl">
-								How does the product work?
+							How do I donate items or money?
 							</h3>
 							<span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-300 text-gray-500">
 								<svg
@@ -37,9 +35,7 @@ export const Support = () => {
 							</span>
 						</div>
 						<p className="text-gray-500">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text but is random or otherwise generated.
+						Simply register or log in, choose your donation type, and follow the steps. You can schedule a pickup for items or scan a QR code for money donations.
 						</p>
 					</div>
 					{/* question - end */}
@@ -47,7 +43,7 @@ export const Support = () => {
 					<div className="rounded-lg bg-gray-100 p-5">
 						<div className="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 							<h3 className="font-semibold text-indigo-500 sm:text-lg md:text-xl">
-								What are the features?
+							Is my donation safe?
 							</h3>
 							<span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-300 text-gray-500">
 								<svg
@@ -65,9 +61,7 @@ export const Support = () => {
 							</span>
 						</div>
 						<p className="text-gray-500">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text but is random or otherwise generated.
+						Yes, we only work with verified NGOs and use secure payment methods to ensure your contribution is handled safely.
 						</p>
 					</div>
 					{/* question - end */}
@@ -75,7 +69,7 @@ export const Support = () => {
 					<div className="rounded-lg bg-gray-100 p-5">
 						<div className="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 							<h3 className="font-semibold text-indigo-500 sm:text-lg md:text-xl">
-								What about integrations?
+							How do I register my NGO?
 							</h3>
 							<span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-300 text-gray-500">
 								<svg
@@ -93,17 +87,14 @@ export const Support = () => {
 							</span>
 						</div>
 						<p className="text-gray-500">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text but is random or otherwise generated.
-						</p>
+						Click on the “Join Us” button, fill in the required details, and our team will review your application.						</p>
 					</div>
 					{/* question - end */}
 					{/* question - start */}
 					<div className="rounded-lg bg-gray-100 p-5">
 						<div className="mb-4 flex items-center justify-between gap-4 border-b pb-4">
 							<h3 className="font-semibold text-indigo-500 sm:text-lg md:text-xl">
-								Is support available?
+							Who receives my donation?
 							</h3>
 							<span className="inline-flex h-8 w-8 shrink-0 items-center justify-center rounded-full bg-gray-300 text-gray-500">
 								<svg
@@ -121,10 +112,7 @@ export const Support = () => {
 							</span>
 						</div>
 						<p className="text-gray-500">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text but is random or otherwise generated.
-						</p>
+						Your donation is sent directly to verified NGOs that support individuals and families in need.						</p>
 					</div>
 					{/* question - end */}
 				</div>
