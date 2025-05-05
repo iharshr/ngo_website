@@ -64,8 +64,10 @@ export const Team = () => {
 					<div>
 						<div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
 							<img
-								src="https://images.unsplash.com/photo-1532073150508-0c1df022bdd1?auto=format&q=75&fit=crop&w=500"
+								src="/shikha.JPG"
 								loading="lazy"
+								height="auto"
+								width="500"
 								alt="Photo by christian ferrer"
 								className="h-full w-full object-cover object-center"
 							/>
@@ -106,8 +108,10 @@ export const Team = () => {
 					<div>
 						<div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
 							<img
-								src="https://images.unsplash.com/photo-1463453091185-61582044d556?auto=format&q=75&fit=crop&w=500"
+								src="/kritika.JPG"
 								loading="lazy"
+								height="auto"
+								width="500"
 								alt="Photo by Ayo Ogunseinde"
 								className="h-full w-full object-cover object-center"
 							/>
