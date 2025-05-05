@@ -28,13 +28,13 @@ export const Header = () => {
 							Home
 						</a>
 						<a
-							href="#"
+							href="/donate"
 							className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
 						>
 							Donate
 						</a>
 						<a
-							href="#"
+							href="/joinus"
 							className="text-lg font-semibold text-gray-600 transition duration-100 hover:text-indigo-500 active:text-indigo-700"
 						>
 							Join Us
