@@ -12,7 +12,7 @@ export const Gallery = () => {
 						className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
 					>
 						<img
-							src="https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600"
+							src="https://img.freepik.com/free-photo/digital-art-young-students-attending-school-education_23-2151065226.jpg?w=600"
 							loading="lazy"
 							alt="Photo by Minh Pham"
 							className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -29,7 +29,7 @@ export const Gallery = () => {
 						className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
 					>
 						<img
-							src="https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600"
+							src="https://img.freepik.com/free-vector/flat-hand-drawn-clothing-donation-illustration-with-people_23-2148829663.jpg?h=600"
 							loading="lazy"
 							alt="Photo by Magicle"
 							className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
@@ -64,7 +64,7 @@ export const Gallery = () => {
 						className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
 					>
 						<img
-							src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600"
+							src="https://img.freepik.com/free-vector/cartoon-world-humanitarian-day-illustration_23-2148996147.jpg?h=600"
 							loading="lazy"
 							alt="Photo by Lorenzo Herrera"
 							className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
