@@ -14,7 +14,7 @@ export const DonatePage = () => {
 					</p>
 				</div>
 				<h3 className="mb-4 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">
-					Item(s) Deatils
+					Item(s) Details
 				</h3>
 				<form
 					onSubmit={(e) => {
@@ -162,7 +162,7 @@ export const DonatePage = () => {
 							Send
 						</button>
 					</div>
-					<p className="text-xs text-gray-400">
+					{/* <p className="text-xs text-gray-400">
 						By signing up to our newsletter you agree to our{" "}
 						<a
 							href="#"
@@ -171,7 +171,7 @@ export const DonatePage = () => {
 							Privacy Policy
 						</a>
 						.
-					</p>
+					</p> */}
 				</form>
 			</div>
 		</div>

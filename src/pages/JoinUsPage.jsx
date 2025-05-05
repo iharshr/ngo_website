@@ -147,7 +147,7 @@ export const JoinUsPage = () => {
 							Send
 						</button>
 					</div>
-					<p className="text-xs text-gray-400">
+					{/* <p className="text-xs text-gray-400">
 						By signing up to our newsletter you agree to our{" "}
 						<a
 							href="#"
@@ -156,7 +156,7 @@ export const JoinUsPage = () => {
 							Privacy Policy
 						</a>
 						.
-					</p>
+					</p> */}
 				</form>
 			</div>
 		</div>
