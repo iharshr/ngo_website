@@ -23,11 +23,11 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-									John McCulling
+									Mudra Rathore
 								</div>
-								<p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
+								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CEO / Datadrift
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
