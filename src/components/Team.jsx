@@ -109,7 +109,7 @@ export const Team = () => {
 					<div>
 						<div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
 							<img
-								src="/kritika.jpg"
+								src="/kritika.png"
 								loading="lazy"
 								height="auto"
 								width="auto"
