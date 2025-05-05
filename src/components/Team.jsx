@@ -40,7 +40,7 @@ export const Team = () => {
 							<div className="flex">
 								<div className="flex gap-4">
 									<a
-										href="#"
+										href="https://www.linkedin.com/in/mudra-rathore"
 										target="_blank"
 										className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
 									>
@@ -65,7 +65,7 @@ export const Team = () => {
 					<div>
 						<div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
 							<img
-								src="/shikha.JPG"
+								src="/shikha.jpg"
 								loading="lazy"
 								height="auto"
 								width="500"
@@ -84,7 +84,7 @@ export const Team = () => {
 							<div className="flex">
 								<div className="flex gap-4">
 									<a
-										href="#"
+										href="https://www.linkedin.com/in/shikha-bisht-9864a8268/"
 										target="_blank"
 										className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
 									>
@@ -128,7 +128,7 @@ export const Team = () => {
 							<div className="flex">
 								<div className="flex gap-4">
 									<a
-										href="#"
+										href="https://www.linkedin.com/in/kritika-sharma-ks56"
 										target="_blank"
 										className="text-gray-400 transition duration-100 hover:text-gray-500 active:text-gray-600"
 									>
