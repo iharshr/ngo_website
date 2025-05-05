@@ -1,6 +1,6 @@
 export const Header = () => {
 	return (
-		<div className="bg-white pb-6 sm:pb-8 lg:pb-12">
+		<div className="bg-white pb-3 sm:pb-2 lg:pb-3">
 			<div className="mx-auto max-w-screen-2xl px-4 md:px-8">
 				<header className="mb-4 flex items-center justify-between py-4 md:py-8">
 					{/* logo - start */}
