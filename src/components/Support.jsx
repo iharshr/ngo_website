@@ -16,12 +16,25 @@ export const Support = () => {
 					{/* content - start */}
 					<div className="flex w-full flex-col p-4 sm:w-1/2 sm:p-8 lg:w-3/5">
 						<h2 className="mb-4 text-xl font-bold text-gray-800 md:text-2xl lg:text-4xl">
-							Help center
+						Frequently Asked Questions (FAQs)
 						</h2>
+						<p className="mb-1 max-w-md text-gray-600">
+                        Q1. How can I make a donation? 
+						</p>
 						<p className="mb-8 max-w-md text-gray-600">
-							This is a section of some simple filler text, also known as
-							placeholder text. It shares some characteristics of a real written
-							text.
+						A: Simply register as a donor, choose a donation type (items or money), and follow the steps. For money donations, you can pay via QR code. For items, schedule a pickup.
+						</p>
+						<p className="mb-1 max-w-md text-gray-600">
+						Q2. How do I register my NGO?
+						</p>
+						<p className="mb-8 max-w-md text-gray-600">
+						A: Click on the “Register NGO” button, fill in your organization details, and submit the form. Our team will review and approve your request shortly.
+						</p>
+						<p className="mb-1 max-w-md text-gray-600">
+						Q3. Is my money donation safe?	
+						</p>
+						<p className="mb-8 max-w-md text-gray-600">
+						A: Yes, we use secure QR-based payment systems, and your donation goes directly to the registered NGO you choose.	
 						</p>
 						<div className="mt-auto">
 							<a
