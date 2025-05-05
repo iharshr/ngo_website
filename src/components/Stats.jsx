@@ -5,48 +5,48 @@ export const Stats = () => {
 				{/* text - start */}
 				<div className="mb-8 md:mb-12">
 					<h2 className="mb-4 text-center text-2xl font-bold text-gray-800 md:mb-6 lg:text-3xl">
-						Our Team by the numbers
+						Our Impact
 					</h2>
-					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
+					{/* <p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
 						This is a section of some simple filler text, also known as
 						placeholder text. It shares some characteristics of a real written
 						text but is random or otherwise generated.
-					</p>
+					</p> */}
 				</div>
 				{/* text - end */}
 				<div className="grid grid-cols-2 gap-6 rounded-lg bg-indigo-500 p-6 md:grid-cols-4 md:gap-8 md:p-8">
 					{/* stat - start */}
 					<div className="flex flex-col items-center">
 						<div className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-							200
+							2+ LAC
 						</div>
-						<div className="text-sm text-indigo-200 sm:text-base">People</div>
+						<div className="text-sm text-indigo-200 sm:text-base">children and their families are impacted every year</div>
 					</div>
 					{/* stat - end */}
 					{/* stat - start */}
 					<div className="flex flex-col items-center">
 						<div className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-							500+
+							2000+
 						</div>
-						<div className="text-sm text-indigo-200 sm:text-base">People</div>
+						<div className="text-sm text-indigo-200 sm:text-base">Villages and slums are reached out to across the country</div>
 					</div>
 					{/* stat - start */}
 					<div className="flex flex-col items-center">
 						<div className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-							1000+
+							400+
 						</div>
 						<div className="text-sm text-indigo-200 sm:text-base">
-							Customers
+						Projects focused on education, healthcare, and women empowerment
 						</div>
 					</div>
 					{/* stat - end */}
 					{/* stat - start */}
 					<div className="flex flex-col items-center">
 						<div className="text-xl font-bold text-white sm:text-2xl md:text-3xl">
-							A couple
+							27+
 						</div>
 						<div className="text-sm text-indigo-200 sm:text-base">
-							Coffee breaks
+							States are reached including the remotest area.
 						</div>
 					</div>
 					{/* stat - end */}
