@@ -8,7 +8,10 @@ export const Team = () => {
 						Meet our Team
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-					Behind every act of kindness is a team of passionate individuals dedicated to making a real difference in the lives of those in need. Meet the hearts and minds who drive our mission forward with compassion, commitment, and purpose.
+						Behind every act of kindness is a team of passionate individuals
+						dedicated to making a real difference in the lives of those in need.
+						Meet the hearts and minds who drive our mission forward with
+						compassion, commitment, and purpose.
 					</p>
 				</div>
 				{/* text - end */}
@@ -109,7 +112,7 @@ export const Team = () => {
 								src="/kritika.jpg"
 								loading="lazy"
 								height="auto"
-								width="500"
+								width="auto"
 								alt="Photo by Ayo Ogunseinde"
 								className="h-full w-full object-cover object-center"
 							/>
