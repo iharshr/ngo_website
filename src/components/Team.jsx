@@ -8,9 +8,7 @@ export const Team = () => {
 						Meet our Team
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text but is random or otherwise generated.
+					Behind every act of kindness is a team of passionate individuals dedicated to making a real difference in the lives of those in need. Meet the hearts and minds who drive our mission forward with compassion, commitment, and purpose.
 					</p>
 				</div>
 				{/* text - end */}
@@ -30,11 +28,11 @@ export const Team = () => {
 						</div>
 						<div>
 							<div className="font-bold text-indigo-500 md:text-lg">
-								John McCulling
+								Mudra Rathore
 							</div>
-							<p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
+							{/* <p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
 								Founder / CEO
-							</p>
+							</p> */}
 							{/* social - start */}
 							<div className="flex">
 								<div className="flex gap-4">
@@ -74,11 +72,11 @@ export const Team = () => {
 						</div>
 						<div>
 							<div className="font-bold text-indigo-500 md:text-lg">
-								Kate Berg
+								Shikha Bisht
 							</div>
-							<p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
+							{/* <p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
 								CFO
-							</p>
+							</p> */}
 							{/* social - start */}
 							<div className="flex">
 								<div className="flex gap-4">
@@ -118,11 +116,11 @@ export const Team = () => {
 						</div>
 						<div>
 							<div className="font-bold text-indigo-500 md:text-lg">
-								Greg Jackson
+								Kritika Sharma
 							</div>
-							<p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
+							{/* <p className="mb-3 text-sm text-gray-500 md:mb-4 md:text-base">
 								CTO
-							</p>
+							</p> */}
 							{/* social - start */}
 							<div className="flex">
 								<div className="flex gap-4">

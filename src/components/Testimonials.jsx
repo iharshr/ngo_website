@@ -9,8 +9,7 @@ export const Testimonials = () => {
 					{/* quote - start */}
 					<div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
 						<div className="text-center text-gray-600">
-							“This is a section of some simple filler text, also known as
-							placeholder text.”
+							“I’m so glad I found this platform! It made donating clothes and essentials so easy. The team was super responsive, and I felt like my small contribution really made a big impact.”
 						</div>
 						<div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
 							<div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
@@ -23,7 +22,7 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-									Mudra Rathore
+								Riya S., Donor
 								</div>
 								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CEO / Datadrift
@@ -35,8 +34,7 @@ export const Testimonials = () => {
 					{/* quote - start */}
 					<div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
 						<div className="text-center text-gray-600">
-							“This is a section of some simple filler text, also known as
-							placeholder text.”
+							“Working with this NGO has been a life-changing experience. The dedication of the team and the joy of helping those in need truly inspired me. I’m proud to be a part of this journey.”
 						</div>
 						<div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
 							<div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
@@ -49,11 +47,11 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-									Kate Berg
+									KAman K., Volunteer
 								</div>
-								<p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
+								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CFO / Dashdash
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
@@ -61,8 +59,7 @@ export const Testimonials = () => {
 					{/* quote - start */}
 					<div className="flex flex-col items-center gap-4 sm:px-4 md:gap-6 lg:px-8">
 						<div className="text-center text-gray-600">
-							“This is a section of some simple filler text, also known as
-							placeholder text.”
+							“This platform has connected us with so many kind-hearted donors. The process is smooth, organized, and incredibly helpful for our cause. It’s heartwarming to see people come together for good.”
 						</div>
 						<div className="flex flex-col items-center gap-2 sm:flex-row md:gap-3">
 							<div className="h-12 w-12 overflow-hidden rounded-full bg-gray-100 shadow-lg md:h-14 md:w-14">
@@ -75,11 +72,11 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-									Greg Jackson
+								Sneha M., NGO Partner
 								</div>
-								<p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
+								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CTO / Uptime
-								</p>
+								</p> */}
 							</div>
 						</div>
 					</div>
