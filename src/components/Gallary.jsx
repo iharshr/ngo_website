@@ -19,7 +19,7 @@ export const Gallery = () => {
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
 						<span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-							VR
+							Education
 						</span>
 					</a>
 					{/* image - end */}
@@ -36,7 +36,7 @@ export const Gallery = () => {
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
 						<span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-							Tech
+							Cloths
 						</span>
 					</a>
 					{/* image - end */}
@@ -53,7 +53,7 @@ export const Gallery = () => {
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
 						<span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-							Dev
+							Food
 						</span>
 					</a>
 					{/* image - end */}
@@ -70,22 +70,20 @@ export const Gallery = () => {
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
 						<span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-							Retro
+							Health
 						</span>
 					</a>
 					{/* image - end */}
 				</div>
 				<div className="flex items-start justify-between gap-8 sm:items-center">
 					<p className="max-w-screen-sm text-sm text-gray-500 lg:text-base">
-						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text.
+					Want to know more about us? Click the button below to visit our About Us section!
 					</p>
 					<a
 						href="#"
 						className="inline-block rounded-lg border bg-white px-4 py-2 text-center text-sm font-semibold text-gray-500 outline-none ring-indigo-300 transition duration-100 hover:bg-gray-100 focus-visible:ring active:bg-gray-200 md:px-8 md:py-3 md:text-base"
 					>
-						More
+						Learn More
 					</a>
 				</div>
 			</div>
