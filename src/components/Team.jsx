@@ -65,7 +65,7 @@ export const Team = () => {
 					<div>
 						<div className="mb-2 h-48 overflow-hidden rounded-lg bg-gray-100 shadow-lg sm:mb-4 sm:h-60 md:h-80">
 							<img
-								src="/shikha.jpg"
+								src="/shikha.png"
 								loading="lazy"
 								height="auto"
 								width="500"
