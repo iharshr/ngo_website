@@ -46,8 +46,9 @@ export const Gallery = () => {
 						className="group relative flex h-48 items-end overflow-hidden rounded-lg bg-gray-100 shadow-lg md:h-80"
 					>
 						<img
-							src="https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600"
+							src="https://img.freepik.com/free-vector/boy-giving-milk-bottle-homeless-man_1308-104998.jpg"
 							loading="lazy"
+							width="600"
 							alt="Photo by Martin Sanchez"
 							className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
 						/>
@@ -77,7 +78,8 @@ export const Gallery = () => {
 				</div>
 				<div className="flex items-start justify-between gap-8 sm:items-center">
 					<p className="max-w-screen-sm text-sm text-gray-500 lg:text-base">
-					Want to know more about us? Click the button below to visit our About Us section!
+						Want to know more about us? Click the button below to visit our
+						About Us section!
 					</p>
 					<a
 						href="#"
