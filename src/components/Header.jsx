@@ -24,7 +24,10 @@ export const Header = () => {
 					{/* logo - end */}
 					{/* nav - start */}
 					<nav className="hidden gap-12 lg:flex">
-						<a href="/" className="text-lg font-semibold text-indigo-500">
+						<a
+							href="/"
+							className="text-lg font-semibold text-gray-600 hover:text-indigo-500 active:text-indigo-700"
+						>
 							Home
 						</a>
 						<a
