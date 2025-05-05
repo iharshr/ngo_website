@@ -10,9 +10,7 @@ export const DonatePage = () => {
 						Donate To The Needed
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text but is random or otherwise generated.
+					A small donation can bring a big change. Whether it’s clothes, food, electronics, or money, your contribution reaches verified NGOs working directly with people in need. With easy pickups and secure payments, giving has never been this simple. Join us in making lives better — one donation at a time.
 					</p>
 				</div>
 				<h3 className="mb-4 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">

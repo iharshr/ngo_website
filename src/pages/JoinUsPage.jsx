@@ -10,9 +10,7 @@ export const JoinUsPage = () => {
 						Join Our Network
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
-						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text but is random or otherwise generated.
+					Be a part of a growing community that believes in the power of giving. Whether you’re an NGO looking for support or a donor ready to make a difference, our platform connects you with people who care. Together, we can build a stronger, more compassionate world — one donation, one connection at a time.
 					</p>
 				</div>
 				<h3 className="mb-4 text-center text-xl font-bold text-gray-800 md:mb-6 lg:text-2xl">
