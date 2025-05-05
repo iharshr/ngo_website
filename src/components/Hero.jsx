@@ -5,14 +5,14 @@ export const Hero = () => {
 				<section className="min-h-96 relative flex flex-1 shrink-0 items-center justify-center overflow-hidden rounded-lg bg-gray-100  shadow-lg md:py-20 xl:py-48">
 					{/* image - start */}
 					<img
-						src="https://images.unsplash.com/photo-1618004652321-13a63e576b80?auto=format&q=75&fit=crop&w=1500"
+						src="https://images.unsplash.com/photo-1542810634-71277d95dcbb?auto=format&q=75&fit=crop&w=1500"
 						loading="lazy"
 						alt="Photo by Fakurian Design"
 						className="absolute inset-0 h-full w-full object-cover object-center"
 					/>
 					{/* image - end */}
 					{/* overlay - start */}
-					<div className="absolute inset-0 bg-indigo-500 mix-blend-multiply" />
+					<div className="absolute inset-0 bg-indigo-300 mix-blend-multiply" />
 					{/* overlay - end */}
 					{/* text start */}
 					<div className="relative flex flex-col items-center p-4 sm:max-w-xl">
