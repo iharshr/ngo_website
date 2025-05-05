@@ -22,7 +22,7 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-								Riya S., Donor
+								Rohit S., Donor
 								</div>
 								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CEO / Datadrift
@@ -47,7 +47,7 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-									KAman K., Volunteer
+									Kriti, Volunteer
 								</div>
 								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CFO / Dashdash
@@ -72,7 +72,7 @@ export const Testimonials = () => {
 							</div>
 							<div>
 								<div className="text-center text-sm font-bold text-indigo-500 sm:text-left md:text-base">
-								Sneha M., NGO Partner
+								Sam, NGO Partner
 								</div>
 								{/* <p className="text-center text-sm text-gray-500 sm:text-left md:text-sm">
 									CTO / Uptime
