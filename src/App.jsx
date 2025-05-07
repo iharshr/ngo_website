@@ -3,8 +3,10 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { HomePage } from "./pages/Home";
 import { AboutUsPage } from "./pages/AboutUs";
 import { JoinUsPage } from "./pages/JoinUsPage";
-import { DonatePage } from "./pages/Donate";
+import { TestPage } from "./pages/TestPage";
 import { Layout } from "./components/Layout";
+import { BrowseDonations } from "./pages/BrowseDonations";
+
 function App() {
 	return (
 		<Router>
@@ -13,7 +15,8 @@ function App() {
 					<Route index element={<HomePage />} />
 					<Route path="aboutus" element={<AboutUsPage />} />
 					<Route path="joinus" element={<JoinUsPage />} />
-					<Route path="donate" element={<DonatePage />} />
+					<Route path="donations" element={<BrowseDonations />} />
+					<Route path="test" element={<TestPage />} />
 				</Route>
 			</Routes>
 		</Router>
