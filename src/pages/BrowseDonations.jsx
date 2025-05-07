@@ -1,51 +1,35 @@
+import React, { useEffect, useState } from "react";
 import Swal from "sweetalert2";
 import withReactContent from "sweetalert2-react-content";
 
-const articles = [
-	{
-		title: "New trends in Tech",
-		image:
-			"https://images.unsplash.com/photo-1593508512255-86ab42a8e620?auto=format&q=75&fit=crop&w=600",
-		author: "Mike Lane",
-		authorImage:
-			"https://images.unsplash.com/photo-1611898872015-0571a9e38375?auto=format&q=75&fit=crop&w=64",
-		donation_amount: 200,
-		date: "July 19, 2021",
-	},
-	{
-		title: "Working with legacy stacks",
-		image:
-			"https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&q=75&fit=crop&w=600",
-		author: "Jane Jackobs",
-		authorImage:
-			"https://images.unsplash.com/photo-1586116104126-7b8e839d5b8c?auto=format&q=75&fit=crop&w=64",
-		donation_amount: 200,
-		date: "April 07, 2021",
-	},
-	{
-		title: "10 best smartphones for devs",
-		image:
-			"https://images.unsplash.com/photo-1542759564-7ccbb6ac450a?auto=format&q=75&fit=crop&w=600",
-		author: "Tylor Grey",
-		authorImage:
-			"https://images.unsplash.com/photo-1592660503155-7599a37f06a6?auto=format&q=75&fit=crop&w=64",
-		donation_amount: 200,
-		date: "March 15, 2021",
-	},
-	{
-		title: "8 High performance Notebooks",
-		image:
-			"https://images.unsplash.com/photo-1610465299996-30f240ac2b1c?auto=format&q=75&fit=crop&w=600",
-		author: "Ann Park",
-		authorImage:
-			"https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&q=75&fit=crop&w=64",
-		donation_amount: 200,
-		date: "January 27, 2021",
-	},
-];
-
 export const BrowseDonations = () => {
-	const showSwal = () => {
+	const [ngos, setNgos] = useState([]);
+	const [loading, setLoading] = useState(true);
+
+	// Fetch NGOs data from the backend API
+	useEffect(() => {
+		const fetchNgos = async () => {
+			try {
+				const response = await fetch(
+					"http://localhost:5050/api/ngos-confirmed"
+				);
+				const data = await response.json();
+				setNgos(data); // Set the fetched data to the state
+				setLoading(false);
+			} catch (error) {
+				console.error("Error fetching NGOs:", error);
+				setLoading(false);
+			}
+		};
+		fetchNgos();
+	}, []);
+
+	// If loading, show loading message
+	if (loading) {
+		return <div>Loading...</div>;
+	}
+
+	const showSwal = (ngoId) => {
 		withReactContent(Swal)
 			.fire({
 				title: "Donation Details",
@@ -123,6 +107,7 @@ export const BrowseDonations = () => {
 						weight: document.getElementById("pickup-weight").value,
 						length: document.getElementById("pickup-length").value,
 						height: document.getElementById("pickup-height").value,
+						ngoId: ngoId, // Pass ngoId here
 					};
 
 					if (
@@ -152,45 +137,75 @@ export const BrowseDonations = () => {
 						weight,
 						length,
 						height,
+						ngoId, // Capture ngoId
 					} = result.value;
 
+					// Create the invoice HTML
 					const invoiceHtml = `
 						<div style="text-align: left; font-family: Arial, sans-serif; padding: 20px; max-width: 600px; margin: auto;">
-						<h2 style="color: #4CAF50; margin-bottom: 10px;">Donation Confirmed 🎉</h2>
-						<p style="font-size: 16px; margin-bottom: 20px;">Thank you for your generous donation. Here are your details:</p>
-
-						<div style="background-color: #f9f9f9; padding: 16px; border-radius: 8px; border: 1px solid #ddd;">
-							<h3 style="margin-top: 0; margin-bottom: 10px;">Donor Information</h3>
-							<p><strong>Name:</strong> ${name}</p>
-							<p><strong>Email:</strong> ${email}</p>
-							<p><strong>Phone:</strong> ${phone}</p>
-							<p><strong>Donation Type:</strong> ${type}</p>
-							<p><strong>Pickup Address:</strong> ${address}</p>
-							<p><strong>Pickup Time:</strong> ${new Date(datetime).toLocaleString()}</p>
-
-							<hr style="margin: 20px 0;" />
-
-							<h3 style="margin-top: 0; margin-bottom: 10px;">Parcel Dimensions</h3>
-							<ul style="padding-left: 20px; line-height: 1.6;">
-								<li><strong>Weight:</strong> ${weight} kg</li>
-								<li><strong>Length:</strong> ${length} cm</li>
-								<li><strong>Height:</strong> ${height} cm</li>
-							</ul>
+							<h2 style="color: #4CAF50; margin-bottom: 10px;">Donation Confirmed 🎉</h2>
+							<p style="font-size: 16px; margin-bottom: 20px;">Thank you for your generous donation. Here are your details:</p>
+	
+							<div style="background-color: #f9f9f9; padding: 16px; border-radius: 8px; border: 1px solid #ddd;">
+								<h3 style="margin-top: 0; margin-bottom: 10px;">Donor Information</h3>
+								<p><strong>Name:</strong> ${name}</p>
+								<p><strong>Email:</strong> ${email}</p>
+								<p><strong>Phone:</strong> ${phone}</p>
+								<p><strong>Donation Type:</strong> ${type}</p>
+								<p><strong>Pickup Address:</strong> ${address}</p>
+								<p><strong>Pickup Time:</strong> ${new Date(datetime).toLocaleString()}</p>
+	
+								<hr style="margin: 20px 0;" />
+	
+								<h3 style="margin-top: 0; margin-bottom: 10px;">Parcel Dimensions</h3>
+								<ul style="padding-left: 20px; line-height: 1.6;">
+									<li><strong>Weight:</strong> ${weight} kg</li>
+									<li><strong>Length:</strong> ${length} cm</li>
+									<li><strong>Height:</strong> ${height} cm</li>
+								</ul>
+							</div>
+	
+							<p style="margin-top: 30px; font-size: 16px; color: #333;">
+								<strong>🙏 Thank you for helping us make a difference!</strong><br />
+								We appreciate your kindness and support.
+							</p>
 						</div>
-
-						<p style="margin-top: 30px; font-size: 16px; color: #333;">
-							<strong>🙏 Thank you for helping us make a difference!</strong><br />
-							We appreciate your kindness and support.
-						</p>
-					</div>
 					`;
 
+					// Show the confirmation dialog
 					Swal.fire({
 						title: "Success!",
 						html: invoiceHtml,
 						icon: "success",
 						confirmButtonText: "Done",
 						width: "45%",
+					}).then(() => {
+						// After clicking Done, send POST request to the API
+						fetch("http://localhost:5050/api/donation", {
+							method: "POST",
+							headers: {
+								"Content-Type": "application/json",
+							},
+							body: JSON.stringify({
+								name,
+								type,
+								address,
+								email,
+								phone,
+								datetime,
+								weight,
+								length,
+								height,
+								ngoId, // Include ngoId in the request body
+							}),
+						})
+							.then((response) => response.json())
+							.then((data) => {
+								console.log("Donation submitted successfully:", data);
+							})
+							.catch((error) => {
+								console.error("Error submitting donation:", error);
+							});
 					});
 				}
 			});
@@ -205,15 +220,14 @@ export const BrowseDonations = () => {
 					</h2>
 					<p className="mx-auto max-w-screen-md text-center text-gray-500 md:text-lg">
 						This is a section of some simple filler text, also known as
-						placeholder text. It shares some characteristics of a real written
-						text but is random or otherwise generated.
+						placeholder text.
 					</p>
 				</div>
 
 				<div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4 md:gap-6 xl:gap-8">
-					{articles.map((article, index) => (
+					{ngos.map((ngo) => (
 						<div
-							key={index}
+							key={ngo.id}
 							className="flex flex-col overflow-hidden rounded-2xl bg-white shadow-lg hover:shadow-2xl transition-shadow duration-300"
 						>
 							<a
@@ -221,9 +235,9 @@ export const BrowseDonations = () => {
 								className="group relative block h-48 overflow-hidden bg-gray-100 md:h-64"
 							>
 								<img
-									src={article.image}
+									src={ngo.image_url}
 									loading="lazy"
-									alt={article.title}
+									alt={ngo.ngo_name}
 									className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
 								/>
 							</a>
@@ -233,26 +247,23 @@ export const BrowseDonations = () => {
 										href="#"
 										className="transition duration-100 hover:text-indigo-500 active:text-indigo-600"
 									>
-										{article.title}
+										{ngo.ngo_name}
 									</a>
 								</h2>
 								<p className="mb-8 text-gray-500">
-									This is a section of some simple filler text, also known as
-									placeholder text. It shares some characteristics of a real
-									written text.
+									{ngo.message} {/* Display the message */}
 								</p>
 								<ul className="mb-6 space-y-2 text-green-400">
-									{/* feat - start */}
+									{/* Display Donation Count */}
 									<li className="flex items-center justify-between gap-1.5">
 										<div className="flex items-center justify-center">
-											<span>Total Pledges</span>
+											<span>Total Donations</span>
 										</div>
-										<span>{article.donation_amount}</span>
+										<span>{ngo.donationCount}</span>
 									</li>
-									{/* feat - end */}
 								</ul>
 								<button
-									onClick={showSwal}
+									onClick={() => showSwal(ngo.id)}
 									className="cursor-pointer block rounded-lg bg-red-500 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-300 focus-visible:ring active:bg-red-400 md:text-base"
 								>
 									Donate Now
