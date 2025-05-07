@@ -6,6 +6,7 @@ import { JoinUsPage } from "./pages/JoinUsPage";
 import { TestPage } from "./pages/TestPage";
 import { Layout } from "./components/Layout";
 import { BrowseDonations } from "./pages/BrowseDonations";
+import { ListNgoRequest } from "./pages/ListNgoRequest";
 
 function App() {
 	return (
@@ -17,6 +18,7 @@ function App() {
 					<Route path="joinus" element={<JoinUsPage />} />
 					<Route path="donations" element={<BrowseDonations />} />
 					<Route path="test" element={<TestPage />} />
+					<Route path="/admin/ngo-list" element={<ListNgoRequest />} />
 				</Route>
 			</Routes>
 		</Router>
