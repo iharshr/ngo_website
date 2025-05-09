@@ -36,7 +36,7 @@ export const Gallery = () => {
 						/>
 						<div className="pointer-events-none absolute inset-0 bg-gradient-to-t from-gray-800 via-transparent to-transparent opacity-50" />
 						<span className="relative mb-3 ml-4 inline-block text-sm text-white md:ml-5 md:text-lg">
-							Cloths
+							Clothes
 						</span>
 					</a>
 					{/* image - end */}

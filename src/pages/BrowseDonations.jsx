@@ -43,7 +43,7 @@ export const BrowseDonations = () => {
 								<option value="meds">Meds</option>
 								<option value="foods">Foods</option>
 								<option value="electronics">Electronics</option>
-								<option value="cloths">Cloths</option>
+								<option value="cloths"></option>
 								<option value="educations">Educations</option>
 							</select>
 						</label>
