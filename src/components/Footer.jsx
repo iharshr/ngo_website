@@ -6,10 +6,10 @@ export const Footer = () => {
 					{/* nav - start */}
 					<nav className="mb-4 flex flex-wrap justify-center gap-x-4 gap-y-2 md:justify-start md:gap-6">
 						<div className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">
-							support@yourwebsite.com
+							charitybridge@gmail.com
 						</div>
 						<div className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">
-							+91-88905-12767
+							+91-34626-34986
 						</div>
 						<div className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600">
 							Rajasthan, India

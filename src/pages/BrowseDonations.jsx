@@ -241,33 +241,37 @@ export const BrowseDonations = () => {
 									className="absolute inset-0 h-full w-full object-cover object-center transition duration-200 group-hover:scale-110"
 								/>
 							</a>
-							<div className="flex flex-1 flex-col p-4 sm:p-6">
-								<h2 className="mb-2 text-lg font-semibold text-gray-800">
-									<a
-										href="#"
-										className="transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+							<div className="flex flex-1 flex-col p-4 sm:p-6 justify-between">
+								<div>
+									<h2 className="mb-2 text-lg font-semibold text-gray-800">
+										<a
+											href="#"
+											className="transition duration-100 hover:text-indigo-500 active:text-indigo-600"
+										>
+											{ngo.ngo_name}
+										</a>
+									</h2>
+									<p className="mb-8 text-gray-500">
+										{ngo.message} {/* Display the message */}
+									</p>
+								</div>
+								<div>
+									<ul className="mb-6 space-y-2 text-green-400">
+										{/* Display Donation Count */}
+										<li className="flex items-center justify-between gap-1.5">
+											<div className="flex items-center justify-center">
+												<span>Total Donations</span>
+											</div>
+											<span>{ngo.donationCount}</span>
+										</li>
+									</ul>
+									<button
+										onClick={() => showSwal(ngo.id)}
+										className="cursor-pointer block rounded-lg bg-red-500 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-300 focus-visible:ring active:bg-red-400 md:text-base w-full"
 									>
-										{ngo.ngo_name}
-									</a>
-								</h2>
-								<p className="mb-8 text-gray-500">
-									{ngo.message} {/* Display the message */}
-								</p>
-								<ul className="mb-6 space-y-2 text-green-400">
-									{/* Display Donation Count */}
-									<li className="flex items-center justify-between gap-1.5">
-										<div className="flex items-center justify-center">
-											<span>Total Donations</span>
-										</div>
-										<span>{ngo.donationCount}</span>
-									</li>
-								</ul>
-								<button
-									onClick={() => showSwal(ngo.id)}
-									className="cursor-pointer block rounded-lg bg-red-500 bg-opacity-50 px-8 py-3 text-center text-sm font-semibold text-white outline-none ring-red-300 transition duration-100 hover:bg-red-300 focus-visible:ring active:bg-red-400 md:text-base"
-								>
-									Donate Now
-								</button>
+										Donate Now
+									</button>
+								</div>
 							</div>
 						</div>
 					))}
