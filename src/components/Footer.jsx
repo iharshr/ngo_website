@@ -18,13 +18,13 @@ export const Footer = () => {
 							href="/admin/ngos"
 							className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
 						>
-							amdin/ngos
+							NGO Admin
 						</a>
 						<a
 							href="/admin/donations"
 							className="text-gray-500 transition duration-100 hover:text-indigo-500 active:text-indigo-600"
 						>
-							amdin/donations
+							Donation Admin
 						</a>
 					</nav>
 					{/* nav - end */}
