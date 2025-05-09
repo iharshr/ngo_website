@@ -42,6 +42,8 @@ export const JoinUsPage = () => {
 			const responseData = await response.json();
 			toast.success("Thank you for joining!");
 			console.log("Response Data:", responseData); // Handle the response as needed
+			// Clear the form
+			e.target.reset();
 		} catch (error) {
 			toast.error(`Error: ${error.message}`);
 		}
