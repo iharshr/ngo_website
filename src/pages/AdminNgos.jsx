@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { toast } from "react-toastify";
 
 export const AdminNgos = () => {
 	const [ngos, setNgos] = useState([]);
